@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Sid": "AllowGuardDutyToPutEvents",
+    "Effect": "Allow",
+    "Principal": {
+      "Service": "guardduty.amazonaws.com"
+    },
+    "Action": "events:PutEvents",
+    "Resource": "arn:aws:events:us-east-1:955881485754:event-bus/default",
+    "Condition": {
+      "StringEquals": {
+        "events:Source": "aws.guardduty"
+      }
+    }
+  }]
+}
