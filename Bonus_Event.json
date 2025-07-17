@@ -1,0 +1,28 @@
+{
+  "version": "0",
+  "id": "01234567-89ab-cdef-0123-456789abcdef",
+  "detail-type": "GuardDuty Finding",
+  "source": "aws.guardduty",
+  "account": "123456789012",
+  "time": "2025-07-17T00:00:00Z",
+  "region": "us-east-1",
+  "resources": [],
+  "detail": {
+    "schemaVersion": "2.0",
+    "accountId": "123456789012",
+    "region": "us-east-1",
+    "type": "Recon:EC2/PortProbeUnprotectedPort",
+    "resource": {
+      "resourceType": "Instance",
+      "instanceDetails": {
+        "instanceId": "i-0bccbaa1880e726f0",
+        "instanceType": "t2.micro",
+        "launchTime": "2025-07-01T12:34:56Z",
+        "platform": "Linux"
+      }
+    },
+    "severity": 8.9,
+    "title": "Unprotected port on EC2 instance being probed",
+    "description": "Port probe detected on an EC2 instance."
+  }
+}
